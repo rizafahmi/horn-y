@@ -15,6 +15,9 @@
 		D07BE1391A47F84600F1442E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07BE1371A47F84600F1442E /* LaunchScreen.xib */; };
 		D07BE1451A47F84600F1442E /* Horn_yTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D07BE1441A47F84600F1442E /* Horn_yTests.m */; };
 		D07BE14F1A47FB9A00F1442E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07BE14E1A47FB9A00F1442E /* AVFoundation.framework */; };
+		D07BE1551A47FD4A00F1442E /* KucingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07BE1541A47FD4A00F1442E /* KucingViewController.m */; };
+		D07BE1571A47FDE500F1442E /* kucing.wav in Resources */ = {isa = PBXBuildFile; fileRef = D07BE1561A47FDE500F1442E /* kucing.wav */; };
+		D07BE1591A47FE2300F1442E /* terompet.wav in Resources */ = {isa = PBXBuildFile; fileRef = D07BE1581A47FE2300F1442E /* terompet.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,10 @@
 		D07BE1431A47F84600F1442E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07BE1441A47F84600F1442E /* Horn_yTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Horn_yTests.m; sourceTree = "<group>"; };
 		D07BE14E1A47FB9A00F1442E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D07BE1531A47FD4A00F1442E /* KucingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KucingViewController.h; sourceTree = "<group>"; };
+		D07BE1541A47FD4A00F1442E /* KucingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KucingViewController.m; sourceTree = "<group>"; };
+		D07BE1561A47FDE500F1442E /* kucing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kucing.wav; sourceTree = "<group>"; };
+		D07BE1581A47FE2300F1442E /* terompet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = terompet.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,8 @@
 				D07BE12D1A47F84600F1442E /* AppDelegate.m */,
 				D07BE12F1A47F84600F1442E /* ViewController.h */,
 				D07BE1301A47F84600F1442E /* ViewController.m */,
+				D07BE1531A47FD4A00F1442E /* KucingViewController.h */,
+				D07BE1541A47FD4A00F1442E /* KucingViewController.m */,
 				D07BE1321A47F84600F1442E /* Main.storyboard */,
 				D07BE1351A47F84600F1442E /* Images.xcassets */,
 				D07BE1371A47F84600F1442E /* LaunchScreen.xib */,
@@ -100,6 +109,8 @@
 		D07BE1281A47F84600F1442E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D07BE1581A47FE2300F1442E /* terompet.wav */,
+				D07BE1561A47FDE500F1442E /* kucing.wav */,
 				D07BE1291A47F84600F1442E /* Info.plist */,
 				D07BE12A1A47F84600F1442E /* main.m */,
 			);
@@ -206,6 +217,8 @@
 				D07BE1341A47F84600F1442E /* Main.storyboard in Resources */,
 				D07BE1391A47F84600F1442E /* LaunchScreen.xib in Resources */,
 				D07BE1361A47F84600F1442E /* Images.xcassets in Resources */,
+				D07BE1591A47FE2300F1442E /* terompet.wav in Resources */,
+				D07BE1571A47FDE500F1442E /* kucing.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07BE1311A47F84600F1442E /* ViewController.m in Sources */,
+				D07BE1551A47FD4A00F1442E /* KucingViewController.m in Sources */,
 				D07BE12E1A47F84600F1442E /* AppDelegate.m in Sources */,
 				D07BE12B1A47F84600F1442E /* main.m in Sources */,
 			);

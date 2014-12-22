@@ -16,13 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn5-hP-4gT">
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn5-hP-4gT">
                                 <rect key="frame" x="88" y="10" width="144" height="524"/>
                                 <state key="normal" title="Ini Gambar Terompet">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tombolDipencet" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ODg-wZ-MAA"/>
+                                    <action selector="tombolDiexit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rCA-Ao-vfs"/>
+                                    <action selector="tombolDitekan" destination="vXZ-lx-hvc" eventType="touchDown" id="hH2-ni-HY8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqw-hL-cCr">
+                                <rect key="frame" x="292" y="20" width="28" height="548"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ndo-7J-7VN" kind="show" id="h4n-lr-wr5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +42,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="974"/>
+        </scene>
+        <!--Kucing View Controller-->
+        <scene sceneID="YFD-Iy-fme">
+            <objects>
+                <viewController id="ndo-7J-7VN" customClass="KucingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mDP-Fc-739"/>
+                        <viewControllerLayoutGuide type="bottom" id="1LV-mb-MAp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRr-Oy-ZY1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP3-gh-95c">
+                                <rect key="frame" x="96" y="49" width="128" height="469"/>
+                                <state key="normal" title="Ini Gambar Kucing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="kucingDipencet" destination="ndo-7J-7VN" eventType="touchUpInside" id="pr9-RT-btK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cye-Jg-Ccx">
+                                <rect key="frame" x="5" y="0.0" width="46" height="568"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="esI-tB-BT9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug9-uz-FhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="350"/>
         </scene>
     </scenes>
 </document>

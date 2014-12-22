@@ -13,8 +13,9 @@
     AVAudioPlayer *_audioPlayer;
 }
 
-@end
 
+@end
+bool flag;
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -25,6 +26,7 @@
     NSURL *soundURL = [NSURL fileURLWithPath:path];
     
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:nil];
+    flag = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,8 +34,32 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)tombolDipencet {
-    NSLog(@"Dipencet");
+
+}
+- (IBAction)tombolDitekan {
+    NSLog(@"touchdown");
+    _audioPlayer.currentTime = 0;	
     [_audioPlayer play];
+}
+- (IBAction)tombolDilepas {
+    NSLog(@"dilepas");
+}
+- (IBAction)tombolDitempel:(UIButton *)sender {
+    NSLog(@"Tombol Ditempel");
+    NSLog([sender isTracking] ? @"Yes" : @"NO");
+    if ([sender isTracking]) {
+        if (flag) {
+            flag = NO;
+            NSLog(@"Tombol Ditempel");
+        }
+    } else {
+        flag = YES;
+        NSLog(@"Tombol dilepas");
+    }
+}
+- (IBAction)tombolDiexit:(UIButton *)sender {
+    [_audioPlayer stop];
+    
 }
 
 @end
