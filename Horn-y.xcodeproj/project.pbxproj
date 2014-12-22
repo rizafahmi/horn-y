@@ -14,6 +14,7 @@
 		D07BE1361A47F84600F1442E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07BE1351A47F84600F1442E /* Images.xcassets */; };
 		D07BE1391A47F84600F1442E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07BE1371A47F84600F1442E /* LaunchScreen.xib */; };
 		D07BE1451A47F84600F1442E /* Horn_yTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D07BE1441A47F84600F1442E /* Horn_yTests.m */; };
+		D07BE14F1A47FB9A00F1442E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07BE14E1A47FB9A00F1442E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D07BE13E1A47F84600F1442E /* Horn-yTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Horn-yTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BE1431A47F84600F1442E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07BE1441A47F84600F1442E /* Horn_yTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Horn_yTests.m; sourceTree = "<group>"; };
+		D07BE14E1A47FB9A00F1442E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07BE14F1A47FB9A00F1442E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		D07BE11C1A47F84600F1442E = {
 			isa = PBXGroup;
 			children = (
+				D07BE14E1A47FB9A00F1442E /* AVFoundation.framework */,
 				D07BE1271A47F84600F1442E /* Horn-y */,
 				D07BE1411A47F84600F1442E /* Horn-yTests */,
 				D07BE1261A47F84600F1442E /* Products */,
